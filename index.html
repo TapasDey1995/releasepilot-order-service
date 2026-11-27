@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Release Store</title>
+<style>
+  :root{--bg:#f4f6fb;--ink:#14213d;--mut:#64748b;--card:#fff;--line:#e2e8f0;--blue:#2563eb;--green:#16a34a;--amber:#d97706}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--ink)}
+  header{background:linear-gradient(135deg,#0f1b3d,#2563eb);color:#fff;padding:40px 20px;text-align:center}
+  header h1{margin:0;font-size:34px;letter-spacing:.5px}
+  header p{margin:8px 0 0;opacity:.85}
+  main{max-width:1100px;margin:-24px auto 40px;padding:0 20px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;box-shadow:0 6px 18px rgba(15,27,61,.08);display:flex;flex-direction:column}
+  .icon{font-size:46px;text-align:center;margin-bottom:8px}
+  .pid{font-size:12px;color:var(--mut);font-weight:600;letter-spacing:.05em}
+  .card h2{margin:4px 0 8px;font-size:18px}
+  .card p{margin:0 0 14px;color:var(--mut);font-size:14px;line-height:1.45;flex:1}
+  .row{display:flex;justify-content:space-between;align-items:center}
+  .price{font-size:22px;font-weight:700}
+  .badge{font-size:12px;font-weight:600;padding:3px 10px;border-radius:99px}
+  .in{background:#dcfce7;color:#166534}.low{background:#fef3c7;color:#92400e}
+  footer{text-align:center;color:var(--mut);font-size:13px;padding-bottom:30px}
+</style>
+</head>
+<body>
+<header>
+  <h1>Release Store</h1>
+  <p>Order Service &middot; featured products (static demo data)</p>
+</header>
+<main>
+  <section class="grid">
+    <article class="card">
+      <div class="icon">🎧</div>
+      <span class="pid">PRODUCT ID: P-101</span>
+      <h2>Wireless Headphones</h2>
+      <p>Over-ear Bluetooth headphones with active noise cancellation and 30-hour battery life.</p>
+      <div class="row"><span class="price">$129</span><span class="badge in">In stock: 42</span></div>
+    </article>
+    <article class="card">
+      <div class="icon">⌚</div>
+      <span class="pid">PRODUCT ID: P-102</span>
+      <h2>Smart Watch</h2>
+      <p>Fitness tracking, heart-rate monitor and sleep analysis with a bright AMOLED display.</p>
+      <div class="row"><span class="price">$199</span><span class="badge in">In stock: 18</span></div>
+    </article>
+    <article class="card">
+      <div class="icon">⌨️</div>
+      <span class="pid">PRODUCT ID: P-103</span>
+      <h2>Mechanical Keyboard</h2>
+      <p>Compact hot-swappable keyboard with tactile switches and customizable RGB backlight.</p>
+      <div class="row"><span class="price">$89</span><span class="badge low">Low stock: 5</span></div>
+    </article>
+    <article class="card">
+      <div class="icon">🔊</div>
+      <span class="pid">PRODUCT ID: P-104</span>
+      <h2>Portable Speaker</h2>
+      <p>Waterproof Bluetooth speaker with deep bass and 12 hours of playtime.</p>
+      <div class="row"><span class="price">$59</span><span class="badge in">In stock: 64</span></div>
+    </article>
+  </section>
+</main>
+<p style="text-align:center;color:#2563eb;font-weight:600;margin:0 0 20px">SCRUM-4: order service update ready for release</p>
+<footer>Release Store &middot; Order Service &middot; demo page</footer>
+</body>
+</html>
